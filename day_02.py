@@ -10,6 +10,20 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120
 input was [3, 2, 1], the expected output would be [2, 3, 6].
 
 Follow-up: what if you can't use division?
+
+---------------------
+Português (Brasil)
+
+DIFICIL
+
+Dada uma matriz de inteiros, retorne uma nova matriz de modo que cada elemento no índice i da nova matriz seja o
+produto de todos os números na matriz original, exceto aquele em i.
+
+Por exemplo, se nossa entrada fosse [1, 2, 3, 4, 5], a saída esperada seria [120, 60, 40, 30, 24]. se nosso
+entrada foi [3, 2, 1], a saída esperada seria [2, 3, 6].
+
+Acompanhamento: e se você não puder usar a divisão?
+
 """
 
 numbers = [5, 6, 2, 3, 8]

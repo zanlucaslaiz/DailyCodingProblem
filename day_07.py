@@ -10,13 +10,24 @@ For example, the message '111' would give 3, since it could be decoded as 'aaa',
 You can assume that the messages are decodable. For example, '001' is not allowed.
 """
 
-def numDecodings(self, s: str) -> int:
-    
+def numDecodings(s: str) -> int:
+    if len(s) == 0 or (len(s) == 1 and s[0] == '0'):
+        return 0
+    return numDecodingsHelper(s, len(s))
+ 
+ 
+def numDecodingsHelper(s: str, n: int) -> int:
+    if n == 0 or n == 1:
+        return 1
+    count = 0
+    if s[n-1] > "0":
+        count = numDecodingsHelper(s, n-1)
+    if (s[n - 2] == '1'
+        or (s[n - 2] == '2'
+            and s[n - 1] < '7')):
+        count += numDecodingsHelper(s, n - 2)
+    return count
 
-
-
-
-
-
-
-# link com explicação  https://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/
+if __name__ == "__main__":
+    digits = "1234"
+    print("Count is ", numDecodings(digits))

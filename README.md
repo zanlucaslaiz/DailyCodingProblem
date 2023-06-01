@@ -12,7 +12,8 @@ Repository made to save the codes of the daily challenges of the site https://ww
 | Day_23.py     | Day_11.py    | Day_13.py    |
 | Day_27.py     | Day_14.py    | Day_17.py    |
 | Day_23.py     | Day_19.py    | Day_18.py    |
-|               | Day_22.py    | Day_25.py    |
+| Day_31.py     | Day_22.py    | Day_25.py    |
 |               | Day_24.py    |              |
 |               | Day_26.py    |              |
 |               | Day_28.py    |              |
+|               | Day_30.py    |              |
